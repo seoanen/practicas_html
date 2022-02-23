@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tipos de Input</title>
+</head>
+<!-- 
+    Input Type:
+    button -> Se comporta igual que un botón <button>
+    color -> Se utiliza para especificar un color
+    date -> Se utiliza para introducir una fecha
+    datetime -> obsoleto
+    datetime-local -> fecha y hora , no funciona en firefox
+    email -> se utiliza para introducir un email
+    hidden -> campo oculto puede contener un valor pero no se mostrará
+    month -> se utiliza para introducir un mes
+    number -> se utiliza para valores numéricos
+    password -> se utiliza para contraseñas
+    range -> se utiliza para establecer un rango
+    reset -> se utiliza para resetear el formulario
+    search -> se utiliza para las barras de búsqueda
+    submit -> se utiliza para enviar el formulario
+    tel -> se utiliza para introducir numeros telefonicos
+    text -> valor por defecto
+    time -> se utiliza para introducir una hora
+    TIP:
+        * Se recomienda usar datetime-local y time para seleccionar fecha y hora
+    url -> se utiliza para introducir urls
+    week -> se utiliza para introducir el numero de semana del año
+ -->
+<body>
+
+    <form>
+        <input>
+        <input type="submit" value="Enviar input">
+        <button>Enviar</button>
+    </form>
+
+    <form>
+        <input type="date">
+        <input type="datetime-local">
+        <input type="month">
+        <input type="week">
+    </form>
+
+    <form>
+        <div>
+        <label> search
+            <input type="search">
+        </label>
+    </div>
+    <div>
+        <label> teléfono
+            <input type="tel">
+        </label>
+    </div>
+    <div>
+        <label> email
+            <input type="email">
+        </label>
+    </div>
+    <div>
+        <label> password
+            <input type="password">
+        </label>
+    </div>
+    <div>
+        <label> url
+            <input type="url">
+        </label>
+    </div>
+    </form>
+
+    <hr>
+    <hr>
+
+    <form>
+        <div>
+        <input type="color">
+    </div>
+      <div>
+        <input type="number">
+      </div>
+      <div>
+          <input type="range" step="10" min="0" max="20">
+      </div>
+      <div>
+          <input type="reset">
+      </div>
+      <div>
+          <input type="text">
+      </div>
+    </form>
+    
+</body>
+</html>
